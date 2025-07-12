@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>M3AE2-ABP2</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1><a class="header__logo" href="#">M3AE2-ABP2</a></h1>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--active" href="#">Inicio</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--active" href="#gallery">Galeria</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--disabled" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <article class="main__article article">
+      <h2 class="article__title">Proyecto BEM</h2>
+      <img
+        src="https://static.wixstatic.com/media/10a674_7f253056cb044d2fa8ef1276f603d965~mv2.png/v1/fill/w_766,h_430,al_c,lg_1,q_85,enc_avif,quality_auto/10a674_7f253056cb044d2fa8ef1276f603d965~mv2.png"
+        alt="Descripción de la imagen" class="article__image">
+      <p class="article__text">
+        La metodología <strong>BEM (Bloque, Elemento, Modificador)</strong> es una metodología para nombrar clases CSS
+        que facilita la escritura de código estructurado, claro y escalable. Su objetivo principal es mejorar la
+        organización del HTML y CSS, haciendo que los estilos sean más fáciles de mantener y evitando conflictos entre
+        clases. En BEM, un bloque representa un componente independiente de la interfaz (como header, form o card), un
+        elemento es una parte del bloque que no tiene sentido por sí solo (como card__title o form__input), y un
+        modificador define una versión o estado diferente de un bloque o elemento (como button--primary o
+        nav__link--active). Esta convención ayuda a mantener una jerarquía clara, especialmente en proyectos grandes o
+        en equipos donde múltiples personas trabajan sobre el mismo código. Implementar BEM permite mejorar la
+        legibilidad del código, facilita su reutilización y reduce errores al aplicar estilos.
+      </p>
+      <p class="article__text">
+        Esta página web fue desarrollada aplicando la metodología BEM para organizar y modularizar los estilos CSS de
+        manera clara, escalable y siguiendo buenas prácticas de desarrollo frontend.
+      </p>
+      <p class="article__text">
+        Se cumple con los requerimientos de crear una estructura de carpetas ordenada (<code>html/</code> e
+        <code>css/</code>), incorporando un <strong>header</strong> con logo y navegación, un <strong>contenido
+          principal</strong> con un artículo, una <strong>galería de imágenes</strong> y un <strong>formulario de
+          contacto</strong>, además de un <strong>footer</strong> con información de contacto y enlaces a redes
+        sociales.
+      </p>
+      <p class="article__text">
+        La estructura HTML y las clases CSS siguen estrictamente el formato BEM, separando claramente los bloques
+        (<code>header</code>, <code>article</code>, <code>form</code>, <code>footer</code>) y sus elementos (como
+        <code>header__logo</code>, <code>form__input</code>, <code>gallery__image</code>, etc.).
+      </p>
+      <p class="article__text">
+        Se implementaron <strong>modificadores</strong> para adaptar el comportamiento visual de algunos elementos, como
+        los <code>nav__link--disabled</code> para enlaces inactivos en el menú de navegación, los
+        <code>nav__link--active</code> para enlaces activos en el menú dee navegación y los
+        <code>footer__icon--facebook</code>, <code>--twitter</code> y <code>--instagram</code> para dar estilos
+        personalizados a los íconos de redes sociales.
+      </p>
+      <p class="article__text">
+        La interfaz es funcional y presenta una estructura visual coherente, con una base de responsividad para asegurar
+        su correcta visualización en distintos tamaños de pantalla.
+      </p>
+    </article>
+    <section class="gallery" id="gallery">
+      <h2 class="gallery__title">Galería</h2>
+      <div class="gallery__grid">
+        <img src="https://cdn.pixabay.com/photo/2025/01/10/17/24/birds-9324370_1280.jpg" alt="Imagen 1"
+          class="gallery__image">
+        <img src="https://cdn.pixabay.com/photo/2024/05/23/13/23/moorente-8783210_1280.jpg" alt="Imagen 2"
+          class="gallery__image">
+        <img src="https://cdn.pixabay.com/photo/2021/04/22/06/40/duck-6198196_1280.jpg" alt="Imagen 3"
+          class="gallery__image">
+        <img src="https://cdn.pixabay.com/photo/2019/07/19/16/20/seagull-4349143_1280.jpg" alt="Imagen 4"
+          class="gallery__image">
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contáctanos</h2>
+      <form class="contact__form" id="formularioContacto">
+        <div class="contact__field">
+          <label for="nombre" class="contact__label">Nombre</label>
+          <input type="text" id="nombre" class="contact__input" placeholder="Martin Martinic" required>
+        </div>
+        <div class="contact__field">
+          <label for="email" class="contact__label">Email</label>
+          <input type="email" id="email" class="contact__input" placeholder="martinmartinic@salisbury.cl" required>
+        </div>
+        <div class="contact__field">
+          <label for="mensaje" class="contact__label">Mensaje</label>
+          <textarea id="mensaje" class="contact__textarea" rows="4"
+            placeholder="&#9835; Y no me digas pooobree, por ir viajaaando asííí... &#9835;" required></textarea>
+        </div>
+        <button type="submit" class="contact__button">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__info">
+        <p class="footer__text">© 2025 Nelson Valenzuela ¿Todos los derechos reservados?.</p>
+        <p class="footer__text">Contacto: contacto@misitio.com</p>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__link" aria-label="Facebook">
+          <i class="fab fa-facebook-f footer__icon footer__icon--facebook"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Twitter">
+          <i class="fab fa-twitter footer__icon footer__icon--twitter"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Instagram">
+          <i class="fab fa-instagram footer__icon footer__icon--instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
