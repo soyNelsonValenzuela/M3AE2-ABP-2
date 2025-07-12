@@ -29,8 +29,8 @@ a {
     text-decoration: none;
 }
 
-#gallery,
-#contact {
+#main__gallery,
+#main__contact {
     scroll-margin-top: 60px;
 }
 
@@ -128,7 +128,7 @@ a {
     text-align: justify;
 }
 
-.gallery {
+.main__gallery {
     padding: 40px 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -163,7 +163,7 @@ a {
 
 }
 
-.contact {
+.main__contact {
     padding: 40px 20px;
     background-color: var(--secondary);
     max-width: 800px;
