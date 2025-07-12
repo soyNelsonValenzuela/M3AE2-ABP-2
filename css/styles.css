@@ -47,12 +47,11 @@ a {
 }
 
 .header__container {
-    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -225,10 +224,9 @@ a {
 }
 
 .footer__content {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
@@ -242,6 +240,7 @@ a {
 .footer__text {
     font-size: 0.95rem;
     margin: 2px 0;
+    text-align: center;
 }
 
 .footer__social {
@@ -275,6 +274,11 @@ a {
 }
 
 @media (min-width: 768px) {
+    .header__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
     .gallery__grid {
         grid-template-columns: repeat(2, 1fr);
     }
